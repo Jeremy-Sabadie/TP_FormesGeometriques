@@ -1,8 +1,19 @@
-﻿namespace TP_FormesGeometriques
+﻿namespace TP_FormesGeometriques;
+
+internal class Rectangle : Formes
 {
-    internal class Rectangle : Formes
+    public float Longueur { get; set; }
+    public float Largeur { get; set; }
+
+
+
+    public override double CalculArea()
     {
-        public override float originAbssice;
-        public override float originOrdonnee;
+        return Longueur * Largeur;
+    }
+    public override double CalculPerimeter()
+    {
+        return (2 * Longueur) + (2 * Largeur);
+
     }
 }

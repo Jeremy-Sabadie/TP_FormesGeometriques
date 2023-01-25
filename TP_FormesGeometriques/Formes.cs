@@ -1,8 +1,10 @@
-﻿namespace TP_FormesGeometriques
+﻿namespace TP_FormesGeometriques;
+
+internal abstract class Formes
 {
-    internal abstract class Formes
-    {
-        public abstract float originAbssice;
-        public abstract float originOrdonnee;
-    }
+    public float OriginAbssice { get; protected set; }
+    public float OriginOrdonnee { get; protected set; }
+
+    public abstract double CalculPerimeter();
+    public abstract double CalculArea();
 }
