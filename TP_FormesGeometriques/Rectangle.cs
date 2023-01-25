@@ -2,7 +2,13 @@
 
 internal class Rectangle : Formes
 {
-    public float Longueur { get; set; }
+    public Rectangle(float longueur, float largeur)
+    {
+        Longueur = longueur;
+        Largeur = largeur;
+    }
+
+    float Longueur { get; set; }
     public float Largeur { get; set; }
 
 
