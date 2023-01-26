@@ -24,5 +24,5 @@ formes.Sort();
 Console.WriteLine("affichage de la liste de forme dans l'ordre croissant:");
 for (int i = 0; i < formes.Count; i++)
 {
-    Console.Write($"{formes.ElementAt(i).CalculArea()}|");
+    Console.Write($"index:{i + 1}: {formes.ElementAt(i).CalculArea()}|");
 }
