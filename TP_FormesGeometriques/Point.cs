@@ -2,8 +2,8 @@
 {
     internal class Point
     {
-        private int Abcisse { get; set; }
-        private int Ordonnee { get; set; }
+        public int Abcisse { get; private set; }
+        public int Ordonnee { get; private set; }
 
         public Point(int abcisse, int ordonnee)
         {
@@ -26,5 +26,9 @@
 
         }
 
+        public override string? ToString()
+        {
+            return $"abcisse du point:{Abcisse};ordonnée:{Ordonnee}";
+        }
     }
 }

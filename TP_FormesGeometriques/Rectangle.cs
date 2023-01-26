@@ -2,7 +2,7 @@
 
 internal class Rectangle : Formes
 {
-    public Rectangle(float longueur, float largeur)
+    public Rectangle(float longueur, float largeur, Point origin) : base(origin)
     {
         Longueur = longueur;
         Largeur = largeur;
@@ -21,5 +21,10 @@ internal class Rectangle : Formes
     {
         return (2 * Longueur) + (2 * Largeur);
 
+    }
+
+    public override string? ToString()
+    {
+        return $"{Origin.Abcisse} {Origin.Ordonnee} largeur : {Largeur} longueur{Longueur}";
     }
 }

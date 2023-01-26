@@ -2,14 +2,13 @@
 
 internal class Cercle : Formes
 {
-    private float Rayon { get; set; }
-    private Point Center { get; set; }
+    public float Rayon { get; private set; }
 
 
-    public Cercle(float rayon, Point center)
+    public Cercle(float rayon, Point origin) : base(origin)
     {
         Rayon = rayon;
-        Center = center;
+
     }
 
 
@@ -22,6 +21,10 @@ internal class Cercle : Formes
     public override double CalculPerimeter()
     {
         return 2 * Rayon * Math.PI;
+    }
+    public override string? ToString()
+    {
+        return $"Abcisse de l'origine: {Origin.Abcisse} ordonnée du point d'origine: {Origin.Ordonnee}";
     }
 }
 
