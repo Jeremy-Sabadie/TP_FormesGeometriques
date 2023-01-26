@@ -2,12 +2,15 @@
 
 internal class Cercle : Formes
 {
-    public Cercle(int rayon)
+    private float Rayon { get; set; }
+    private Point Center { get; set; }
+
+
+    public Cercle(float rayon, Point center)
     {
         Rayon = rayon;
+        Center = center;
     }
-
-    public int Rayon { get; protected set; }
 
 
 
